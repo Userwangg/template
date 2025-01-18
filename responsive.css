@@ -270,3 +270,20 @@
 
 
 }
+
+
+
+
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+
+    .hero-cta-btn {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0px;
+    }
+}
+
+
+
+
