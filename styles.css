@@ -9,7 +9,7 @@
     box-sizing: border-box;
 }
 
-/* main header */
+/* main */
 
 section,.right, .left, .social, .social i {
     display: flex;
@@ -27,7 +27,7 @@ section {
 
 .section-wrap {
     background-color: aqua;
-    height: 100vh;
+    height: 90vh;
     width: 95%;
     border: 1px solid black;
     box-shadow: inset 0 0 5px rebeccapurple;
@@ -35,6 +35,7 @@ section {
     backdrop-filter: blur(12px);
     padding: 50px 100px;
     overflow: hidden;
+    
 }
 
 /* header */
@@ -128,6 +129,7 @@ nav, .head-cta {
 }
 
 .left {
+    
     flex-direction: column;
     align-items: center;
     height: 45vh;
@@ -136,6 +138,7 @@ nav, .head-cta {
 }
 
 .adj {
+    
     width: 80%;
     height: 90%;
     text-align: center;
@@ -234,13 +237,15 @@ nav, .head-cta {
     color: white;
 }
 
-/* About */
+
+/* about */
 
 .section-title {
     font-size: 3rem;
     text-transform: uppercase;
     letter-spacing: 5px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .section-title span {
@@ -249,7 +254,7 @@ nav, .head-cta {
 
 .About p{
     font-size: 1.5rem;
-    line-height: 1.6rem;
+    line-height: 2.6rem;
     margin-bottom: 50px;
     margin-top: 50px;
     
@@ -263,15 +268,16 @@ nav, .head-cta {
     letter-spacing: 1px;
     border-radius: 24px;
     color: goldenrod;
-    background-color: gray;
+    background-color: rgb(56, 56, 244);
     padding: 10px 30px;
     cursor: pointer;
     transition: 0.3s;
 }
 
 .section-btn:hover {
-    background-color: rgb(255, 170, 0);
+    background-color: rgb(224, 184, 103);
     box-shadow: 0 0 50px green;
+    color: aliceblue;
 }
 
 .About img {
@@ -281,7 +287,133 @@ nav, .head-cta {
     right: 0;
     width: 100%;
     opacity: 0.5;
-    pointer-events: none;
+    pointer-events:none;
+}
+ 
+/* project */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.project img {
+    width: 100%;
+    border: 10px;
+}
+
+.card {
+    background-color: rgb(233, 117, 235);
+    border: 5px solid rgb(33, 55, 2);
+    padding: 2px;
+    border-radius: 24px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 50px;
+    margin-top: 20px;
 }
 
 
+.card-title {
+    font-size: 1.2rem;
+    margin: 30px 0 20px;
+    text-align: center;
+    
+}
+
+.card:hover {
+    background-color: azure;
+    box-shadow: 0 0 50px rgb(181, 148, 105);
+}
+
+.project .section-btn {
+    width: 100%;
+    margin-top: 40px;
+}
+
+
+/* contact */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact .right img {
+    width: 85%;
+    height: 60vh;
+    margin-top: 100px;
+    margin-right: 100px;
+}
+
+.contact .left {
+    margin-top: 100px;
+}
+
+.contact p{
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+input, textarea {
+    background-color: transparent;
+    color: orange;
+    font-size: 1rem;
+    padding: 14px;
+    border: 1px solid azure;
+    border-radius: 15px;
+}
+
+
+input::placeholder, textarea::placeholder {
+    color: red;
+}
+
+textarea {
+    height: 20vh;
+}
+
+
+form button {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #ff00e1;
+    background-color: rgb(9, 145, 100);
+    padding: 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: gold;
+    box-shadow: 0 0 10px #ff00e1;
+}
+
+
+/* footer */
+.footer {
+    height: auto;
+    
+}
+
+.footer .section-wrap {
+    height: auto;
+    margin: 50px 0;
+}
+
+.copyright {
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 10px;
+}
