@@ -157,7 +157,9 @@
     }
 
     .hero-content .right img {
-        margin-bottom: 20px;
+        margin-bottom: 40px;
+        margin-top: -40px;
+        height: 40vh;
     }
 
     form button {
@@ -176,7 +178,7 @@
 
     .About img {
 
-        height: 130vh;
+        height: 80vh;
 
     }
 
@@ -188,13 +190,23 @@
 
 
 @media (min-width: 769px) and (max-width: 1024px) {
-    
+
+    section {
+        height: auto;
+    }
+
     .section-wrap {
         background-color: blueviolet;
         width: 95%;
-        padding: 10px;
-        margin: 50px 15px;
+        padding: 50px 50px;
+        overflow: visible;
+        height: auto;
+        margin: 20px 0px;
+        
+        
     }
+    
+
 
     .head-logo {
         font-size: 1.5em;
@@ -263,51 +275,37 @@
 
     .About img {
 
-        height: 82vh;
+        height: 75vh;
 
     }
 
 
 
 }
-
 
 
 
 
 @media (min-width: 1025px) and (max-width: 1440px) {
 
+    section {
+        height: auto;
+    }
+
     .section-wrap {
-        background-color: blueviolet;
-        width: 95%;
-        padding: 10px;
-        margin: 50px 15px;
-    }
-
-    .head-logo {
-        font-size: 1.5em;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        margin-left: 10px;
+        background-color: rgb(55, 255, 0);
+        padding: 50px 50px;
+        overflow: visible;
+        height: auto;
+        margin: 20px 0px;
         
-    
-    }
-
-    .nav-items {
-    
-        font-size: 0.8rem;
-        letter-spacing: 1px;
-        margin: 10px;
         
     }
 
+    .About img {
 
-    .header-cta-btn {
-        font-size: 1rem;
-        padding: 10px 30px;
-        margin-right: 10px;
-        
+        height: 65vh;
+
     }
 
     .hero-cta-btn {
@@ -316,46 +314,8 @@
         margin: 10px 0px;
     }
 
-    .social {
-        margin-top: 50px;
-    }
 
-    header {
-        margin-top: 20px;
-    }
-
-    .project-grid {
-        margin: 90px 0px;
-        height: 40vh;
-    }
-
-    .section-title {
-        margin-top: 10px;
-    }
-
-    .contact-grid .left {
-        margin-right: 30px;
-        margin-top: 150px;
-        gap: 30px;
-    }
-
-    .contact .right img {
-        width: 95%;
-        height: 60vh;
-    }
-
-    .hero-content .right img {
-        height: 40vh;
-        margin-top: 50px;
-    }
-
-    .About img {
-
-        height: 82vh;
-
-    }
 }
-
 
 
 
